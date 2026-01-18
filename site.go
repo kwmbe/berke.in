@@ -1,0 +1,26 @@
+package main
+
+import (
+  "log"
+  "net/http"
+
+  // "github.com/gin-gonic/contrib/static"
+  "github.com/gin-gonic/gin"
+)
+
+func main() {
+  // gin.SetMode(gin.ReleaseMode)
+
+  r := gin.Default()
+
+  // Define a health GET endpoint
+  r.GET("/health", func(c *gin.Context) {
+  	c.Status(http.StatusNoContent)
+  })
+
+  // Start server on port 80 (may need elevated permissions)
+  // Server will listen on localhost
+	if err := r.Run(":80"); err != nil {
+    log.Fatalf("failed to run server: %v", err)
+  }
+}

@@ -1,0 +1,15 @@
+services:
+  portfolio:
+    build: portfolio
+    volumes:
+      - portfolio:/shared
+  gosite:
+    build: gosite
+    ports:
+      - "80:80"
+    depends_on:
+      - portfolio
+    volumes:
+      - portfolio:/app/portfolio
+volumes:
+  portfolio:

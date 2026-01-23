@@ -2,15 +2,17 @@
 
 Git-repository for the [berke.in](https://berke.in) website.
 
-## Building the application
-Build the docker image with the following command:
+## Running the application
+Build and run the docker containers with the following command:
 ```
-docker build -t gosite .
+docker compose up
 ```
 
-## Running the application
-Run the image with the following command:
+## Stop the application
+Stop the containers with the following command:
 ```
-docker run -it --rm -p 80:80 gosite
+docker compose down
 ```
-The application now runs on localhost. A request sent to `localhost/health` should return `204 - No Content`.
+If you want to remove the images as well, add the flag `--rmi all`.  
+
+The application now runs on localhost. Any request sent to `localhost/health` should return `204 - No Content`. Localhost itself contains my portfolio.

@@ -9,7 +9,7 @@ RUN go mod download
 COPY . .
 RUN go build -v -o /usr/local/bin/app ./...
 
-FROM alpine:latest
+FROM alpine:latest AS host
 
 WORKDIR /app
 

@@ -19,7 +19,7 @@ func main() {
   })
 
   // Static file hosting for portfolio
-  r.Use(static.Serve("/", static.LocalFile("./portfolio/build/", true)))
+  r.Use(static.Serve("/", static.LocalFile("./portfolio", true)))
 
   // Start server on port 80 (may need elevated permissions)
   // Server will listen on localhost

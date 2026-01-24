@@ -13,6 +13,6 @@ Stop the containers with the following command:
 ```
 docker compose down
 ```
-To remove the images as well, add the flag `--rmi all`.  
+To also remove the images and shared volume, add the flags `--rmi all` and `-v`.  
 
-The application now runs on localhost. Any request sent to `localhost/health` should return `204 - No Content`. Localhost itself contains the portfolio.
+The application now runs on `localhost`. Any request sent to `localhost/health` should return `204 - No Content`. Localhost itself contains the portfolio.

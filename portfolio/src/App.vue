@@ -1,47 +1,40 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Timeline from './components/Timeline.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
+    <h1>Kobe Berkein</h1>
   </header>
 
+  <!-- placeholder -->
+  <div />
+
   <main>
-    <TheWelcome />
+    <Timeline />
   </main>
 </template>
 
 <style scoped>
 header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+  line-height: 1.2;
+  font-size: 3rem;
+  text-align: center;
 }
 
 @media (min-width: 1024px) {
   header {
+    text-align: right;
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
+    position: fixed;
+    width: calc(50% - var(--section-gap));
+    height: 100vh;
   }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+  main {
+    margin: 47.5vh 0 2rem 0;
   }
 }
 </style>

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: Nerdfont;
+  src: url(./fonts/SymbolsNerdFontMono-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/RobotoCondensed-VariableFont_wght.ttf) format("truetype");
+}

@@ -30,12 +30,14 @@ header {
     padding-right: calc(var(--section-gap) / 2);
     position: fixed;
     width: calc(50% - var(--section-gap));
-    max-width: calc(50vw - var(--section-gap));
-    height: 100vh;
+    max-width: calc(640px - var(--section-gap));
+    height: 100%;
+    top: 0;
+    right: 50%;
   }
 
   main {
-    margin: 47.5vh 0 2rem 0;
+    margin: 2rem 0;
   }
 }
 </style>

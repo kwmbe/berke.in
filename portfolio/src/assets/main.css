@@ -19,7 +19,7 @@ a {
 
 @media (hover: hover) {
   a:hover {
-    background-color: var(--navy-trans-light);
+    background-color: var(--color-hover);
   }
 }
 

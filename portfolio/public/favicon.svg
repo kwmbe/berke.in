@@ -1,0 +1,14 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+rect {
+  stroke: #2B3A55;
+  stroke-width: 64;
+}
+@media (prefers-color-scheme: dark) {
+  rect {
+    stroke: #f3f3f3;
+  }
+}
+</style>
+<rect x="32" y="32" width="192" height="192" rx="96"/>
+</svg>
